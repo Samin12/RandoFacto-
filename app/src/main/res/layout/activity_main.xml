@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="app.islam.samin.facts.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/questionsTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="350dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="8dp"
+            android:background="#212121"
+            android:gravity="center"
+            android:text="Random Facts"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#F5F5F5"
+            android:textSize="30sp"
+            />
+
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#F44336"
+            android:onClick="factBank"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="#F5F5F5"
+            android:textSize="20sp"
+            android:singleLine="false" />
+
+    </LinearLayout>
+</RelativeLayout>
